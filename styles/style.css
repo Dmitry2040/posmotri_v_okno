@@ -58,6 +58,8 @@ ol {
   justify-content: space-between;
   gap: 40px;
   align-items: end;
+  padding-inline-start: 3px;
+  margin-block-end: 4px;
 }
 
 .result__video-container {
@@ -84,8 +86,8 @@ ol {
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 3px;
-  padding-bottom: 2;
   letter-spacing: -1px;
+  
 }
  
 .content__list::-webkit-scrollbar {
@@ -97,7 +99,7 @@ ol {
 }
 
 .content__details {
-  block-size: 534px;
+  block-size: 532px;
   inline-size: 406px;
 }
 
@@ -208,8 +210,7 @@ ol {
 }
 
 .search-form {
-  padding-inline-start: 3px;
-  padding-block-end: 7px;
+  
 }
 
 .search-form__textfield {
@@ -295,18 +296,18 @@ ol {
 .search-form__pseudo-checkbox {
   block-size: 19px;
   inline-size: 19px;
-  border: 1px solid #FFF;  
+  border: 1px solid #FFF;
+  position: relative; 
+  padding: 1px; 
 }
 
-.search-form__pseudo-checkbox:active + span::after {
+.search-form__pseudo-checkbox:active::before {
   content: "";
-  position: absolute;
-  top: 3.5px;
-  left: 2px;
-  margin:0 auto;
+  display: block;
   background-color: #fff;
   width: 15px;
   height: 15px;
+  
 }
 
 .search-form__pseudo-checkbox:hover {
